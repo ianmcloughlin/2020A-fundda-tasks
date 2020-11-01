@@ -104,12 +104,21 @@
     That URL should then be submitted using the link on the Moodle page.
 
     \begin{enumerate}
-      \item
-        \textbf{October 5\textsuperscript{th}, 2020:}
+      \item \textbf{October 5\textsuperscript{th}, 2020:}
         Write a Python function called \mintinline{python}{counts} that takes a list as input and returns a dictionary of unique items in the list as keys and the number of times each item appears as values.
         So, the input \mintinline{python}{['A', 'A', 'B', 'C', 'A']} should have output \mintinline{python}{{'A': 3, 'B': 1, 'C': 1}}.
         Your code should not depend on any module from the standard library\footnote{By the standard library, we mean the modules and packages that come as standard with Python. Anything built-in that can be used without an \mintinline{python}{import} statement can be used.} or otherwise.
         You should research the task first and include a description with references of your algorithm in the notebook.
+      \item \textbf{November 2\textsuperscript{nd}, 2020:}
+        Write a Python function called \mintinline{python}{dicerolls} that simulates rolling dice.
+        Your function should take two parameters: the number of dice $k$ and the number of times to roll the dice $n$.
+        The function should simulate randomly rolling $k$ dice $n$ times, keeping track of each total face value.
+        It should then return a dictionary with the number of times each possible total face value occurred.
+        So, calling the function as \mintinline{python}{diceroll(k=2, n=1000)} should return a dictionary like:
+        \begin{minted}{python}
+{2:19,3:50,4:82,5:112,6:135,7:174,8:133,9:114,10:75,11:70,12:36}
+        \end{minted}
+        You can use any module from the Python standard library you wish and you should include a description with references of your algorithm in the notebook.
     \end{enumerate}
 
   \newpage
